@@ -1,92 +1,54 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="container text-center py-4 mb-4">
       <div class="rounded overflow-hidden">
         <img
           class="rounded-circle"
           alt="Vue logo"
           src="./assets/logo.png"
-          style="width: 200px;"
+          style="width: 180px;"
         />
       </div>
-      <div class="jumbotron mt-3">
-        <h1>Bottom Navbar example</h1>
-        <p class="lead">
-          This example is a quick exercise to illustrate how the bottom navbar works.
-        </p>
-        <a
-          class="btn btn-lg btn-primary"
-          href="/docs/4.5/components/navbar/"
-          role="button"
-        >
-          View navbar docs &raquo;
-        </a>
+      <div class="jumbotron d-flex mt-3">
+        <div class="flex-fill">
+          <h1>
+            Is Sweetpea being Good?
+          </h1>
+          <p class="lead">
+            Her infractions will tell the story
+          </p>
+          <p>
+            <kbd>@sweetpea</kbd>
+            you better behave.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <Chart />
+      </div>
+      <div class="pb-4 mb-4">
         <HelloWorld />
       </div>
-      <Chart />
     </div>
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Bottom navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-          <li class="nav-item dropup">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown10"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Dropup</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdown10">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+    <BottomNav />
   </div>
 </template>
 
 <script>
+// Components
 import HelloWorld from "./components/HelloWorld.vue";
 import Chart from "./components/Chart.vue";
+import BottomNav from "./components/BottomNav.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
     Chart,
+    BottomNav,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-}
-</style>
+<style lang="scss"></style>
