@@ -27,7 +27,7 @@
         <Chart />
       </div>
       <div class="pb-4 mb-4">
-        <HelloWorld />
+        <AddInfraction />
       </div>
     </div>
 
@@ -37,14 +37,14 @@
 
 <script>
 // Components
-import HelloWorld from "./components/HelloWorld.vue";
+import AddInfraction from "./components/AddInfraction.vue";
 import Chart from "./components/Chart.vue";
 import BottomNav from "./components/BottomNav.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    AddInfraction,
     Chart,
     BottomNav,
   },

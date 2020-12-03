@@ -2,7 +2,7 @@
   <div class="BottomNav">
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
-        Bottom navbar
+        SweetPea.fun
       </a>
       <button
         class="navbar-toggler"
@@ -24,16 +24,11 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Link
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-              Disabled
+              Admin
             </a>
           </li>
-          <li class="nav-item dropup">
+          <!-- <li class="nav-item dropup">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -49,7 +44,7 @@
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>

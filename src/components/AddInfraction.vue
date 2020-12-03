@@ -1,17 +1,22 @@
 <template>
-  <div class="hello text-left mt-4">
+  <div class="AddInfraction text-left mt-4">
     <h3>
       Sweetpea being bad?
     </h3>
-    <button class="btn btn-primary" type="button">
+
+    <b-button v-b-modal.modal-1>
       &#43; Infraction
-    </button>
+    </b-button>
+
+    <b-modal id="modal-1" title="BootstrapVue">
+      <p class="my-4">Hello from modal!</p>
+    </b-modal>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "AddInfraction",
   props: {},
 };
 </script>
