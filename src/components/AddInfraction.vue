@@ -4,12 +4,17 @@
       Sweetpea being bad?
     </h3>
 
-    <b-button v-b-modal.modal-1>
+    <b-button v-b-modal.modal-1 variant="primary">
       &#43; Infraction
     </b-button>
 
-    <b-modal id="modal-1" title="BootstrapVue">
-      <p class="my-4">Hello from modal!</p>
+    <b-modal id="modal-1" title="SweetPea Was Bad">
+      <b-input-group size="lg" prepend="Points." append="🔱" class="mb-4">
+        <b-form-input></b-form-input>
+      </b-input-group>
+      <b-input-group prepend="Password">
+        <b-form-input type="password"></b-form-input>
+      </b-input-group>
     </b-modal>
   </div>
 </template>
