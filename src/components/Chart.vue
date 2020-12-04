@@ -42,7 +42,7 @@ export default {
       series: [
         {
           // name: "Likes",
-          data: [100, 70, 92, 90],
+          data: [100, 70, 92, 90, 60, 91],
         },
       ],
       chartOptions: {
@@ -56,7 +56,14 @@ export default {
         },
         xaxis: {
           type: "datetime",
-          categories: ["12/01/2020", "12/02/2020", "12/03/2020", "12/04/2020"],
+          categories: [
+            "12/01/2020",
+            "12/02/2020",
+            "12/03/2020",
+            "12/04/2020",
+            "12/04/2020", // didn't want to go in her cage
+            "12/04/2020",
+          ],
           // tickAmount: 10,
           labels: {
             formatter: function(value, timestamp, opts) {
