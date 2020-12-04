@@ -41,6 +41,7 @@ export default {
     return {
       series: [
         {
+          // type: "line",
           // name: "Likes",
           data: [100, 70, 92, 90, 60, 91],
         },
@@ -55,21 +56,22 @@ export default {
           curve: "smooth",
         },
         xaxis: {
-          type: "datetime",
-          categories: [
-            "12/01/2020",
-            "12/02/2020",
-            "12/03/2020",
-            "12/04/2020",
-            "12/04/2020", // didn't want to go in her cage
-            "12/04/2020",
-          ],
+          // type: "datetime",
+          type: "numeric",
+          // categories: [
+          //   // "12/01/2020",
+          //   // "12/02/2020",
+          //   // "12/03/2020",
+          //   // "12/04/2020",
+          //   // "12/04/2020", // didn't want to go in her cage
+          //   // "12/04/2020",
+          // ],
           // tickAmount: 10,
-          labels: {
-            formatter: function(value, timestamp, opts) {
-              return opts.dateFormatter(new Date(timestamp), "dd MMM");
-            },
-          },
+          // labels: {
+          //   formatter: function(value, timestamp, opts) {
+          //     return opts.dateFormatter(new Date(timestamp), "dd MMM");
+          //   },
+          // },
         },
         title: {
           // text: "Obedience",
