@@ -9,7 +9,7 @@
     </b-button>
 
     <b-modal id="modal-1" title="SweetPea Was Bad">
-      <b-input-group size="lg" prepend="Points." append="🔱" class="mb-4">
+      <b-input-group size="lg" prepend="Points." append="🔱" class="mb-4" type="number">
         <b-form-input></b-form-input>
       </b-input-group>
       <b-input-group prepend="Password">

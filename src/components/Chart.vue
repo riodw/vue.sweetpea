@@ -1,12 +1,30 @@
 <template>
   <div class="chart">
-    <div>
-      <apexchart
-        type="line"
-        height="350"
-        :options="chartOptions"
-        :series="series"
-      ></apexchart>
+    <div class="row m-0">
+      <div class="card col-md mb-3 mr-md-3">
+        <apexchart
+          :options="chartOptions"
+          :series="series"
+          type="line"
+          height="350"
+        ></apexchart>
+      </div>
+      <div class="card mb-3 col-md-auto col-sm-12 p-0">
+        <div class="card-body">
+          <div class="d-flex flex-column align-items-stretch">
+            <div class="">
+              <p class="h1 m-0">
+                &#8593;
+              </p>
+            </div>
+            <div>
+              <p class="h1 m-0">
+                &#8595;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -23,8 +41,8 @@ export default {
     return {
       series: [
         {
-          name: "Likes",
-          data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5],
+          // name: "Likes",
+          data: [100, 70, 92, 90],
         },
       ],
       chartOptions: {
@@ -38,27 +56,8 @@ export default {
         },
         xaxis: {
           type: "datetime",
-          categories: [
-            "1/11/2000",
-            "2/11/2000",
-            "3/11/2000",
-            "4/11/2000",
-            "5/11/2000",
-            "6/11/2000",
-            "7/11/2000",
-            "8/11/2000",
-            "9/11/2000",
-            "10/11/2000",
-            "11/11/2000",
-            "12/11/2000",
-            "1/11/2001",
-            "2/11/2001",
-            "3/11/2001",
-            "4/11/2001",
-            "5/11/2001",
-            "6/11/2001",
-          ],
-          tickAmount: 10,
+          categories: ["12/01/2020", "12/02/2020", "12/03/2020", "12/04/2020"],
+          // tickAmount: 10,
           labels: {
             formatter: function(value, timestamp, opts) {
               return opts.dateFormatter(new Date(timestamp), "dd MMM");
@@ -66,7 +65,7 @@ export default {
           },
         },
         title: {
-          text: "Social Media",
+          // text: "Obedience",
           align: "left",
           style: {
             fontSize: "16px",
@@ -87,12 +86,12 @@ export default {
             colorStops: [
               {
                 offset: 0,
-                color: "#ffea00",
+                color: "#ff9ea4",
                 opacity: 1,
               },
               {
                 offset: 100,
-                color: "#ff9ea4",
+                color: "#ffea00",
                 opacity: 1,
               },
             ],
@@ -108,10 +107,10 @@ export default {
           },
         },
         yaxis: {
-          min: -10,
-          max: 40,
+          min: 0,
+          max: 100,
           title: {
-            text: "Engagement",
+            text: "Good Girl Status",
           },
         },
       },

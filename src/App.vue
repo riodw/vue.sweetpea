@@ -1,31 +1,31 @@
 <template>
   <div id="app">
-    <div class="container text-center py-4 mb-4">
-      <div class="rounded overflow-hidden">
-        <img
-          class="rounded-circle"
-          alt="Vue logo"
-          src="./assets/logo.png"
-          style="width: 180px;"
-        />
-      </div>
-      <div class="jumbotron d-flex mt-3">
-        <div class="flex-fill">
-          <h1>
-            Is Sweetpea being Good?
-          </h1>
-          <p class="lead">
-            Her infractions will tell the story
-          </p>
-          <p>
-            <kbd>@sweetpea</kbd>
-            you better behave.
-          </p>
+    <div class="container text-center py-4">
+      <div class="jumbotron">
+        <div class="row justify-content-center m-0">
+          <div class="rounded overflow-hidden">
+            <img
+              class="rounded-circle"
+              alt="Vue logo"
+              src="./assets/logo.png"
+              style="width: 180px;"
+            />
+          </div>
+          <div>
+            <h1>
+              Sweetpea being Good?
+            </h1>
+            <p class="lead">
+              Her infractions will tell the story
+            </p>
+            <p>
+              <kbd>@sweetpea</kbd>
+              you better behave.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <Chart />
-      </div>
+      <Chart />
       <div class="pb-4 mb-4">
         <AddInfraction />
       </div>
